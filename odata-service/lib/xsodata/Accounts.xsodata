@@ -1,0 +1,14 @@
+service {
+    "Q_AccountsPayable" as "AccountsPayable"
+	keys generate local "ID"
+	parameters via key and entity;
+	
+	"Q_AccountsReceivable" as "AccountsReceivable"
+	keys generate local "ID"
+	parameters via entity "InputParams";
+	
+}
+
+annotations {
+    enable OData4SAP;
+}

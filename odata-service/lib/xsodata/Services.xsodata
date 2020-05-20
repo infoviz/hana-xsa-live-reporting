@@ -1,0 +1,64 @@
+service {
+    
+	"Q_BillingDoc" as "BillingDoc"
+	keys generate local "ID"
+    aggregates always;
+    
+    "Q_CreditMemo" as "CreditMemo"
+	keys generate local "ID"
+    aggregates always;
+    
+    "Q_CreditRatio" as "CreditRatio"
+	keys generate local "ID"
+    aggregates always;
+    
+    "Q_CustomerMasterList" as "CustomerMasterList"
+	keys generate local "ID"
+    aggregates always;
+    
+    "Q_GoodsReceiptsGoodsIssues" as "GoodsReceiptsGoodsIssues"
+	keys generate local "ID"
+    aggregates always;
+    
+    "Q_InvoiceVerification" as "InvoiceVerification"
+	keys generate local "ID"
+    aggregates always;
+    
+    "Q_Material" as "Material"
+	keys generate local "ID"
+    aggregates always;
+    
+    "Q_PurchaseOrderDetails" as "PurchaseOrderDetails"
+	keys generate local "ID"
+    aggregates always;
+    
+    "Q_ReturnAnalysis" as "ReturnAnalysis"
+	keys generate local "ID"
+    aggregates always;
+    
+    "Q_Sales_Deliveries_List" as "SalesDeliveriesList"
+	keys generate local "ID"
+    aggregates always;
+    
+    "Q_SalesOrderfulfillment" as "SalesOrderfulfillment"
+	keys generate local "ID"
+    aggregates always;
+    
+    
+    "Q_StockOverview" as "StockOverview"
+	keys generate local "ID"
+    aggregates always;
+    
+    
+    "Q_VendorMasterList" as "VendorMasterList"
+	keys generate local "ID"
+    aggregates always;
+    
+    //Q_SalesOrderListItems-- params
+    //Q_SalesOrderScheduling-- params
+    
+}
+
+annotations {
+    enable OData4SAP;
+}
