@@ -53,16 +53,6 @@ service {
 	keys generate local "ID"
     aggregates always;
     
-    
-    "Q_StockOverview" as "StockOverview"
-	keys generate local "ID"
-    aggregates always;
-    
-    
-    "Q_VendorMasterList" as "VendorMasterList"
-	keys generate local "ID"
-    aggregates always;
-    
     "Q_SalesOrderListItems" as "SalesOrderListItems"
 	keys generate local "ID"
 	parameters via key and entity;
@@ -70,6 +60,14 @@ service {
     "Q_SalesOrderScheduling" as "SalesOrderScheduling"
     keys generate local "ID"
 	parameters via key and entity;
+    
+    "Q_StockOverview" as "StockOverview"
+	keys generate local "ID"
+    aggregates always;
+    
+    "Q_VendorMasterList" as "VendorMasterList"
+	keys generate local "ID"
+    aggregates always;
     
 }
 

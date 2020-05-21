@@ -1,20 +1,20 @@
 ID: HANA_LIVE_XSA
 _schema-version: '2.1'
-version: 0.0.1
+version: 0.0.2
 modules:
   - name: db
     type: hdb
     path: db
     requires:
       - name: hana-xsa-live-reporting_hdi-db
-    properties:
-      TARGET_CONTAINER: '~{hdi-container-name}'
+    # properties:
+    #   TARGET_CONTAINER: '~{hdi-container-name}'
   - name: odata-service
     type: nodejs
     path: odata-service
     parameters:
       disk-quota: 650M
-      memory: 128M
+      memory: 200M
     provides:
       - name: odata-service_api
         properties:
